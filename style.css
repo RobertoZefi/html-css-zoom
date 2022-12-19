@@ -4,17 +4,52 @@
     margin: 0;
 }
 
+img{
+    max-width: 100%;
+}
+
+body{
+    color: white;
+    background-color: black;
+}
+
 ul li{
     list-style: none;
 }
 
 .main-content{
-    height: 100vh;
-    padding-top: 80px;
+    padding-top: 156px;
+}
+
+.speaker::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f17a";
+}
+
+.speaker{
+    background-color:rgba(186, 186, 186, 0.5);
+    padding: 5px;
+    margin-left: 5px;
+    border-radius:5px;
+}
+
+.top{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.cross{
+    background-color:rgba(186, 186, 186, 0.5);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .container{
-    max-width: 1800px;
+    max-width: 2000px;
+    height: 80vh;
     margin: 0 auto;
 }
 
@@ -25,8 +60,13 @@ ul li{
 }
 
 .col{
-    flex-basis: 250px;
+    flex-basis: 280px;
     position: relative;
+    height: 14vh;
+    background-image: url(https://picsum.photos/seed/picsum/200/300);
+    background-size: cover;
+    background-position:center;
+    margin-bottom: 13px;
 }
 
 .user{
@@ -34,6 +74,7 @@ ul li{
     bottom: 0;
     left: 0;
     padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .user::before{
@@ -48,17 +89,34 @@ ul li{
     justify-content: space-between;
     min-height: 80px;
     margin-top: 30px;
+    background-color: rgb(34, 34, 34);
 }
 
 .col-com{
-    gap: 10px;
+    gap: 15px;
     display: flex;
     align-items: center;
+    padding: 0 15px;
 }
 
-.micro{
-
+.icon{
+    font-size: 30px;
+    padding-bottom: 8px;
 }
+
+li{
+    text-align: center;
+}
+
+.end{
+    background-color: rgb(74, 74, 74);
+    color: red;
+}
+
+.share{
+    color: green;
+}
+
 
 /***********************
 debug rules
