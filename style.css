@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.main-content{
+    height: 100vh;
+    padding-top: 80px;
+}
+
+.container{
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.col{
+    flex-basis: 250px;
+    position: relative;
+}
+
+.user{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+}
+
+.user::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f131";
+}
+
+
+/***********************
+debug rules
+***********************/
+
+.debug .container{
+    border: 3px solid red;
+    min-height: 800px;
+}
+
+.debug .row{
+    border: 2px dashed green;
+}
+
+.debug .col{
+    border: 1px dashed black;
+    min-height: 150px;
+}
